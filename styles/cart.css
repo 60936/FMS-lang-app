@@ -1,0 +1,128 @@
+/* ! Changing default styles of the browser */
+
+.a{
+  color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ! Navbar STyles are here */
+
+.navbar {
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #212529;
+  color: white;
+  padding: 5px 6px;
+  margin-bottom: 30px;
+  position: fixed; /*Add this line to lock the navbar from scrolling */
+  top: 0; /* Optional: Set the navbar to the top of the viewport */
+  left: 0; /* Optional: Set the navbar to the left of the viewport */
+  width: 100%; /* Optional: Set the width to span the entire viewport */
+}
+.footer{
+  color: white; font-family: arial; font-size: 12px;
+  top: 40px; position: fixed; left: 60px;
+    
+}
+/* ! Navbar STyles are here */
+
+
+
+.item {
+  border: 2px solid darkblue;
+  border-radius: 4px;
+}
+/* .item img{
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+} */
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+/* ! style rules for label and some buttons
+**/
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+textarea,
+select {
+  border: 1px solid #ccc; /* Set the border color */
+  border-radius: 4px; /* Optional: Add rounded corners to the input */
+  padding: 2px 2px 2px 2px; /* Optional: Add padding for better visual appearance */
+  margin-bottom: 5px; /* Optional: Add margin to separate the inputs */
+  border-color: darkblue;
+}
+
+
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  color: aliceblue;
+  background-color: #0e0707;
+  text-align: center;
+  border-radius: 2px;
+  font-size: normal;
+    
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/* tooltip */

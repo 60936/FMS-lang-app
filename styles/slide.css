@@ -1,0 +1,62 @@
+/*
+=============== 
+Slider
+===============
+*/
+
+
+.slider-container {
+  border: 5px solid var(--clr-primary-5);
+  width: 80vw;
+  margin: 0 auto;
+  height: auto;
+  max-width: 40rem;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
+ .btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.7rem;
+}
+.prevBtn,
+.nextBtn,
+.goBtn,
+.span {
+ width: 40px;
+ font-size: larger;
+ font-weight: 700;
+ 
+}
+
+.inputBox {
+  width: 60px;
+  font-size: larger;
+}
+
+.prevBtn:hover,
+.nextBtn:hover,
+.goBtn:hover {
+  background-color:forestgreen; 
+  color: greenyellow
+}
+
+
+@media screen and (min-width: 576px) {
+  .slider-container {
+    height: 45vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider-container {
+    height: 60vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .slider-container {
+    height: 65vh;
+  }
+}
